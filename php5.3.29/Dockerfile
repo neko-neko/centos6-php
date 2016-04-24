@@ -106,4 +106,4 @@ RUN ./configure \
     --enable-shmop
 RUN make && make install
 WORKDIR /
-RUN rm -rf php-$PHP_VERSION
+CMD ["/bin/bash"]
